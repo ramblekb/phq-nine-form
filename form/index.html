@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./app.js"></script>
+   <script scr="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.form.io/formiojs/formio.full.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.form.io/formiojs/formio.full.min.css">
+   <script src="https://cdn.form.io/formiojs/formio.full.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div id="formio"></div>
+
+
+   <div id="subJson"></div>
+
+   <input name="results" type="button" value="Sum" id="txt" />
+
+</body>
+
+<script src="./app.js"></script>
+<script>
+
+   $('#txt').on('click', function () {
+      alert(getsum());
+   });
+
+
+
+   function getsum() {
+      var sum = 0;
+      $('input:checked').each(function () {
+         sum += parseInt($(this).val());
+      });
+      return sum;
+   }
+</script>
+
+<!-- <script>
+   $('#txt').on('click', function () {
+      alert(getsum());
+      window.location = './thanks.html';
+   });
+
+   function getsum() {
+      var sum = 0;
+      $('input:checked').each(function () {
+         sum += parseInt($(this).val());
+      });
+      return sum;
+   }
+
+</script> -->
+
+</html>
