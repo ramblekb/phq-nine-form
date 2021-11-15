@@ -13,18 +13,16 @@
   box-sizing: border-box;
 }
 
-/* Heydon Pickering’s lobotomized owl. Details: https://bit.ly/1H7MXUD */
 * + * {
   margin-top: 1rem;
 }
 
-/* Set up fonts, colors and all that jazz. */
 body {
   background: var(--color-lightest);
   color: var(--color-gray-medium);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.45;
 }
 
@@ -32,7 +30,7 @@ body {
 h1,
 h2 {
   color: var(--color-darkest);
-  font-size: 110%;
+  font-size: 100%;
   line-height: 1.1;
 }
 
@@ -44,8 +42,8 @@ h1 {
 .contact-form,
 .results {
   width: 90vw;
-  max-width: 650px;
-  margin: 8vh auto;
+  max-width: 850px;
+  margin: 4vh auto;
 }
 
 p {
@@ -74,6 +72,7 @@ p {
 .input-group {
   margin-top: 0.25rem;
   padding: 0.5rem 1rem;
+  border-radius: 20px;
 }
 
 .contact-form label {
@@ -95,6 +94,7 @@ p {
   margin-left: 0.25rem;
 }
 
+.contact-form input,
 .contact-form select,
 .contact-form textarea{
   display: block;
@@ -122,13 +122,13 @@ p {
 .contact-form input:active {
   border-color: var(--color-gray-medium);
 }
-/* 
-#txt {
+
+
+.contact-form button {
   display: block;
   margin: 0.5rem 1rem 0;
   padding: 0 1rem 0.125rem;
   background-color: var(--color-gray-medium);
-  margin-left: 1rem;
   border: 0;
   color: var(--color-lightest);
   font-family: lato, sans-serif;
@@ -137,18 +137,26 @@ p {
   line-height: 1.5;
   text-transform: uppercase;
   transition: 150ms all linear;
-}  */
-
-
-#reb, #txt
-{
-  border-radius: 10px; 
-  border-color:rgb(0, 0, 0);
 }
 
-#bu
-{
-  border-radius: 10px; 
-  border-color:rgba(0, 0, 0, 0);
-  background-color: #2a2f2c00;
+.contact-form button:hover,
+.contact-form button:active,
+.contact-form button:focus {
+  background: var(--color-darkest);
+  cursor: pointer;
+}
+
+#radioIn {
+  height: 40px;
+  width: auto;
+  border-width: 0px;
+}
+
+#upBtn, #mainMove {
+  float: left;
+  padding-left: 10%;
+}
+
+#dwnBtn {
+  background-color: #3f37376f;
 }

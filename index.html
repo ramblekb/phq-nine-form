@@ -29,7 +29,7 @@
       </div>
    </div>
    <div>
-      <section class="contact-form">
+      <section class="container">
          <form>
             <h6>Answer Scale: <br>0 = Not at all<br>1 = Several days<br>2 = More than half the days<br>3 = Nearly every
                day
@@ -46,7 +46,7 @@
    </div>
    </form>
    <div class="row">
-      <div class="column" id="mainMove">
+      <div class="container" id="mainMove">
          <button id="dwnBtn" onClick="scrollToBottom()"><input name="results" type="button" value="View Results"
                id="radioIn" onclick="response()" />
          </button>
@@ -73,7 +73,7 @@
       <h2>Form Data</h2>
       <pre>
       <div class="container">
-      <p id="demo"></p>
+      <p id="scores"></p>
    </div>      
    <button id="upBtn" onClick="scrollToTop()">Return</button>
 </pre>
@@ -91,6 +91,7 @@
       </div>
    </footer>
 </body>
+
 <script>
    $('#radioIn').on('click', function () {
       console.log(getsum());
@@ -121,7 +122,7 @@
       } else {
          feedback = "Your score is: " + i + "<br></br>According to PHQ9's Personal Health Questionnaire<br></br>Depression Severity" + "Results: 20-27 are equal to Severe Depression: <br></br>Proposed Treatment Actions: Adjust treatment plan; focused assessment of safety plan and pharmacotherapy evaluation/ re-evaluation; If emergent then refer to higher level of care; Likely Not a candidate for asynchronous/text therapy.";
       }
-      document.getElementById("demo").innerHTML = feedback;
+      document.getElementById("scores").innerHTML = feedback;
    }
 </script>
 <script>scrollingElement = (document.scrollingElement || document.body)
