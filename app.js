@@ -1,252 +1,87 @@
 Formio.createForm(document.getElementById('formio'), {
-   components: [
-      {
-         type: 'radio',
-         label: 'Little interest or pleasure in doing things?',
-         class: 'form-check-input row1',
-         key: "input",
-         input: true,
-         inline: true,
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+   "display": "form",
+   "components": [{
+      "label": "PHQ-9 Form",
+      "tableView": true,
+      "questions": [{
+         "label": "Little interest or pleasure in doing things?",
+         "value": "qa",
+         "key": "a",
+         "valueType": "number",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Feeling down, depressed, or hopeless?',
-         class: 'form-check-input row1',
-         key: "input",
-         input: true,
-         inline: true,
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Feeling down, depressed, or hopeless?",
+         "value": "qb",
+         "key": "b",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Feeling tired or having little energy?',
-         class: 'form-check-input row2',
-         key: "input",
-         input: true,
-         inline: true,
-         key: "radio2",
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Trouble falling or staying asleep, or sleeping too much?",
+         "value": "qc",
+         "key": "c",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Poor appetite or overeating?',
-         class: 'form-check-input row2',
-         key: "input",
-         input: true,
-         inline: true,
-         key: "radio2",
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Feeling tired or having little energy?",
+         "value": "qd",
+         "value": "d",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Feeling bad about yourself - or that you are a failure or have let yourself or your family down?',
-         class: 'form-check-input row1',
-         key: "input",
-         input: true,
-         inline: true,
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Poor appetite or overeating?",
+         "value": "qe",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Trouble concentrating on things, such as reading the newspaper or watching television?',
-         class: 'form-check-input row1',
-         key: "input",
-         input: true,
-         inline: true,
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down?",
+         "value": "qf",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Moving or speaking so slowly that other people could have noticed?',
-         class: 'form-check-input row2',
-         key: "input",
-         input: true,
-         inline: true,
-         key: "radio2",
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Trouble concentrating on things, such as reading the newspaper or watching television?",
+         "value": "qg",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?',
-         class: 'form-check-input row2',
-         key: "input",
-         input: true,
-         inline: true,
-         key: "radio2",
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Moving or speaking so slowly that other people could have noticed?  Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?",
+         "value": "qh",
+         "key": "c",
+         "tooltip": ""
       },
       {
-         type: 'radio',
-         label: 'Thoughts that you would be better off dead, or of hurting yourself in some way?',
-         class: 'form-check-input row1',
-         key: "input",
-         inline: true,
-         input: true,
-         values: [
-            {
-               label: "Not at all",
-               value: 0,
-            },
-            {
-               label: "Several days",
-               value: 1,
-            },
-            {
-               label: "More than half the days",
-               value: 2,
-            },
-            {
-               label: "Nearly every day",
-               value: 3,
-            }
-         ],
+         "label": "Thoughts that you would be better off dead, or of hurting yourself in some way?",
+         "value": "qi",
+         "tooltip": ""
+      }
+      ],
+      "key": "answerVal",
+      "values": [{
+         "label": "Not at all",
+         "value": 0,
       },
+      {
+         "label": "Several days",
+         "value": 1,
+      },
+      {
+         "label": "More than half the days",
+         "value": 2,
+      },
+      {
+         "label": "Nearly every day",
+         "value": 3,
+      }
+      ],
+
+      "key": "survey",
+      "type": "survey",
+      "input": true
+   },
    ]
-})
-   .then(function (form) {
-      // form.on('change', function (result) {
-      //    document.querySelector('#subJson').innerHTML = "result: " + JSON.stringify(result.data) + "values: " + JSON.stringify(result.data);
-      // });
+}).then((data) => {
+   console.log(stringifyJSON(data));
+   window.localStorage.setItem(key, JSON.stringify(data));
 
-      form.on('submitDone', function (submission) {
-         window.location = '/app/thanks.html';
-      });
+});
 
-   });
